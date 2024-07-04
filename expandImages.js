@@ -1,8 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   const galleryContainer = document.querySelector(".gallery-container");
 
+  //  Event listener set up to detect clicks inside the gallery
   galleryContainer.addEventListener("click", function (e) {
     e.preventDefault();
+
     const clickedElement = e.target.closest("a");
 
     if (clickedElement && clickedElement.classList.contains("box")) {

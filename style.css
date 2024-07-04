@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
 :root {
-  --pink: #ff71ad;
-  --blue: #142660;
+  --pink: #ff699f;
+  --blue: #13275f;
   --black: #1d1c1c;
-  --white: #fff;
+  --white: #fefefe;
   --green: #a9e035;
   --light-color: #666;
   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
@@ -47,9 +47,8 @@ section {
 }
 
 /* home */
-
 .home {
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
@@ -59,23 +58,6 @@ section {
 
 .home .content {
   flex: 1 1 40rem;
-  padding-top: 6.5rem;
-}
-
-.home .content h3 {
-  font-size: 6rem;
-  color: var(--black);
-}
-
-.home .content h3 span {
-  color: var(--pink);
-}
-
-.home .content p {
-  font-size: 1.7rem;
-  color: var(--light-color);
-  line-height: 1.8;
-  padding: 1rem 0;
 }
 
 .home .image {
@@ -83,7 +65,9 @@ section {
 }
 
 .home .image img {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
+  display: block;
 }
 
 .custom-shape-divider-bottom-1684324473 {
@@ -213,6 +197,7 @@ section {
   background: url(images/teacher-bg.png) no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: 10%;
 }
 
 .teacher .box-container {
@@ -289,22 +274,46 @@ section {
   text-align: center;
   box-shadow: var(--box-shadow);
   border-radius: 2rem;
-  outline: 0.1rem solid rgba(0, 0, 0, 0.1);
-  outline-offset: -1rem;
 }
 
 .activities .box-container .box img {
   height: 8rem;
 }
 
-.activities .box-container .box:hover img {
-  transform: scale(1.1);
-}
-
 .activities .box-container .box h3 {
   font-size: 2.2rem;
   padding: 2rem 0;
   color: var(--black);
+}
+.activities .box-container .box-click {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  border-radius: 10px;
+}
+
+.activities .box-container .box-click:hover {
+  background-color: #aae0351f;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  border: 2px solid #c6ea8d; /* Optional: Change border color to match gradient */
+}
+
+.activities .box-container .box-click img {
+  transition: transform 0.3s ease;
+}
+
+.activities .box-container .box-click:hover img {
+  transform: scale(1.1);
+}
+
+/* Optional: Add a transition effect to the h3 element */
+.activities .box-container .box-click h3 {
+  transition: color 0.3s ease;
+}
+
+.activities .box-container .box-click:hover h3 {
+  color: #fe90af; /* Optional: Change text color to match gradient */
 }
 
 /* end */
@@ -585,6 +594,41 @@ section {
   color: var(--pink);
 }
 
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 /* end */
 
 /* media query */
@@ -599,13 +643,17 @@ section {
   }
 
   section {
-    padding: 3rem;
+    padding: 0;
+  }
+
+  .home .image img {
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  .home .content h3 {
-    font-size: 4.5rem;
+  .home .image img {
+    width: 100%;
   }
 }
 
@@ -613,7 +661,8 @@ section {
   html {
     font-size: 50%;
   }
-  .home .content h3 {
-    font-size: 3.5rem;
+
+  .home .image img {
+    width: 100%;
   }
 }

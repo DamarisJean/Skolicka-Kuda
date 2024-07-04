@@ -22,7 +22,7 @@
     <section class="home" id="home">
       <div class="content">
       <div class="image">
-        <img src="images/girlPaint.png" alt="" />
+        <img src="images/girlPaint2.png" alt="" />
       </div>
       <div class="custom-shape-divider-bottom-1684324473">
         <svg
@@ -151,8 +151,10 @@
 
       <div class="box-container">
         <div class="box">
-          <img src="images/graphic1.png" alt="" />
+          <div class="box-click">
+          <img src="images/graphic1.png" alt="" class="graphic1" />
           <h3>Relaxační a zábavné</h3>
+        </div>
         </div>
 
         <div class="box">
@@ -161,8 +163,10 @@
         </div>
 
         <div class="box">
-          <img src="images/graphic2.png" alt="" />
+          <div class="box-click">
+          <img src="images/graphic2.png" alt="" class="graphic2" />
           <h3>Hooping a zábavné</h3>
+          </div>
         </div>
 
         <div class="box">
@@ -176,8 +180,10 @@
         </div>
 
         <div class="box">
-          <img src="images/graphic3.png" alt="" />
+          <div class="box-click">
+          <img src="images/graphic3.png" alt=""  class="graphic3"/>
           <h3>Streaching a zábavné</h3>
+          </div>
         </div>
 
         <div class="box">
@@ -186,12 +192,14 @@
         </div>
 
         <div class="box">
-          <img src="images/graphic4.png" alt="" />
+          <div class="box-click">
+          <img src="images/graphic4.png" alt=""  class="graphic4"/>
           <h3>Skákání a zábavné</h3>
+        </div>
         </div>
       </div>
     </section>
-
+  
     <!-- activities section ends -->
 
     <!-- gallery section starts -->
@@ -339,8 +347,17 @@
 
     <!-- footer section ends -->
 
+    
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-info"></div>
+      </div>
+    </div>
+    
     <!-- custom js file link -->
-    <script src="script.js"></script>
-
+    <script src="activity.js"></script>
+    <script src="expandImages.js"></script>
   </body>
 </html>
