@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Get elements
   const modal = document.getElementById("modal");
   const span = document.getElementsByClassName("close")[0];
   const modalTitle = document.getElementById("modal-title");
@@ -6,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const modalDescription = document.getElementById("modal-description");
   const modalBenefits = document.getElementById("modal-benefits");
 
+  // Adding the information that will be displayed with each graphic section
   const exerciseInfo = {
     "Relaxační a zábavné": {
       title: "Relaxační a zábavné cvičení",
@@ -53,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   };
 
+  // Function to open the modal with exercise information
   function openModal(info) {
     modalTitle.textContent = info.title;
     modalImage.src = info.image;
@@ -64,11 +67,15 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.style.display = "block";
   }
 
+  // Get all the elements with class "box-click"
   const graphics = document.querySelectorAll(".box-click");
 
+  // Add click event listener to each exercise box
   graphics.forEach(function (graphic) {
     graphic.addEventListener("click", function () {
       let exerciseType = "";
+
+      // Determine the exercise type based on the class of the clicked graphic
       if (graphic.querySelector(".graphic1")) {
         exerciseType = "Relaxační a zábavné";
       } else if (graphic.querySelector(".graphic2")) {
@@ -78,14 +85,18 @@ document.addEventListener("DOMContentLoaded", function () {
       } else if (graphic.querySelector(".graphic4")) {
         exerciseType = "Skákání a zábavné";
       }
+
+      // Open the modal with the corresponding exercise information
       openModal(exerciseInfo[exerciseType]);
     });
   });
 
+  // Close the modal when the close button is clicked
   span.onclick = function () {
     modal.style.display = "none";
   };
 
+  // Close the modal when clicking outside of it
   window.onclick = function (event) {
     if (event.target == modal) {
       modal.style.display = "none";
