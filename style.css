@@ -292,6 +292,7 @@ section {
   border: 2px solid transparent;
   box-shadow: var(--box-shadow);
   border-radius: 10px;
+  box-shadow: var(--box-shadow);
 }
 
 .activities .box-container .box-click:hover {
@@ -362,7 +363,7 @@ section {
 }
 
 .gallery .gallery-container .box .icon i {
-  font-size: 6rem;
+  font-size: 3rem;
   color: var(--white);
 }
 
@@ -554,7 +555,7 @@ section {
 
 .footer .box-container .box h3 {
   font-size: 2.2rem;
-  color: var(--orange);
+  color: var(--white);
   padding: 1rem 0;
 }
 
@@ -573,12 +574,12 @@ section {
 }
 
 .footer .box-container .box a:hover {
-  color: var(--pink);
+  color: var(--white);
 }
 
 .footer .box-container .box a i {
   padding-right: 0.5rem;
-  color: var(--pink);
+  color: var(--green);
 }
 
 .footer .credit {
@@ -592,7 +593,7 @@ section {
 }
 
 .footer .credit span {
-  color: var(--pink);
+  color: var(--white);
 }
 
 /* Modal styles */
