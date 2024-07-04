@@ -257,6 +257,8 @@ section {
   max-width: 100%;
   width: 100%;
   height: auto;
+  max-height: 550px; /* Adjust this value as needed */
+  object-fit: contain;
 }
 
 /* end */
@@ -272,7 +274,6 @@ section {
 .activities .box-container .box {
   padding: 3rem 2rem;
   text-align: center;
-  box-shadow: var(--box-shadow);
   border-radius: 2rem;
 }
 
@@ -289,6 +290,7 @@ section {
   cursor: pointer;
   transition: all 0.3s ease;
   border: 2px solid transparent;
+  box-shadow: var(--box-shadow);
   border-radius: 10px;
 }
 
@@ -296,7 +298,7 @@ section {
   background-color: #aae0351f;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transform: translateY(-10px);
-  border: 2px solid #c6ea8d; /* Optional: Change border color to match gradient */
+  border: 2px solid #c6ea8d;
 }
 
 .activities .box-container .box-click img {
@@ -307,13 +309,12 @@ section {
   transform: scale(1.1);
 }
 
-/* Optional: Add a transition effect to the h3 element */
 .activities .box-container .box-click h3 {
   transition: color 0.3s ease;
 }
 
 .activities .box-container .box-click:hover h3 {
-  color: #fe90af; /* Optional: Change text color to match gradient */
+  color: #fe90af;
 }
 
 /* end */
@@ -598,21 +599,24 @@ section {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1000;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-  background-color: #fff;
+  background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .close {
@@ -620,15 +624,45 @@ section {
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: #000;
   text-decoration: none;
   cursor: pointer;
 }
 
+#modal-image {
+  width: auto;
+  max-width: 70%;
+  max-height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+  margin: 15px auto;
+  display: block;
+}
+
+#modal-title {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+#modal-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+#modal-benefits {
+  padding-left: 20px;
+  color: #444;
+}
+
+#modal-benefits li {
+  margin-bottom: 5px;
+}
 /* end */
 
 /* media query */
