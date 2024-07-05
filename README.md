@@ -32,7 +32,9 @@ activity.js: JavaScript for handling activity modal.
 expandImages.js: JavaScript for expanding images in the gallery section.
 
 Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes. For major changes, please open an issue to discuss what you would like to change.
+Contributions are welcome! 
+Please fork the repository and create a pull request with your changes. 
+For major changes, please open an issue to discuss what you want to change.
 
 ## Contact
 Damaris Jean - damarisjjm@icloud.com
