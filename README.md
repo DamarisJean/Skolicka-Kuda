@@ -1,5 +1,8 @@
 # Školička Kuďa
 
+![Home Image](images/M.png)
+
+
 This is the official website for Školička Kuďa, showcasing information about our school, lessons, teachers, activities, and more. The website is built using HTML, CSS, and JavaScript.
 
 ## Table of Contents
