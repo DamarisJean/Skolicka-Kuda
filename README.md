@@ -5,18 +5,6 @@
 
 This is the official website for Školička Kuďa, showcasing information about our school, lessons, teachers, activities, and more. The website is built using HTML, CSS, and JavaScript.
 
-## Table of Contents
-- [Demo](#demo)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
-## Demo
-
-You can view a live demo of the website [here](#).
 
 ## Features
 
