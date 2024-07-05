@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
 
+/*  Colors */
 :root {
   --pink: #ff699f;
   --blue: #13275f;
   --black: #1d1c1c;
   --white: #fefefe;
   --green: #a9e035;
+  --light-blue: #59b3ea;
+  --orange: #ffc336;
   --light-color: #666;
   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
@@ -47,6 +50,7 @@ section {
 }
 
 /* home */
+
 .home {
   min-height: 90vh;
   display: flex;
@@ -293,13 +297,14 @@ section {
   box-shadow: var(--box-shadow);
   border-radius: 10px;
   box-shadow: var(--box-shadow);
+  border-color: var(--light-blue);
 }
 
 .activities .box-container .box-click:hover {
-  background-color: #aae0351f;
+  background-color: #59b2ea2b;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transform: translateY(-10px);
-  border: 2px solid #c6ea8d;
+  border: 2px solid #59b3ea;
 }
 
 .activities .box-container .box-click img {
