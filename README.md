@@ -1,22 +1,10 @@
 # Školička Kuďa
 
-![Home Image](images/M.png)
+![Home Image](images/Readme.png)
 
 
 This is the official website for Školička Kuďa, showcasing information about our school, lessons, teachers, activities, and more. The website is built using HTML, CSS, and JavaScript.
 
-## Table of Contents
-- [Demo](#demo)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
-## Demo
-
-You can view a live demo of the website [here](#).
 
 ## Features
 
@@ -40,9 +28,13 @@ You can view a live demo of the website [here](#).
    
 ## Scripts
 activity.js: JavaScript for handling activity modal.
+
 expandImages.js: JavaScript for expanding images in the gallery section.
+
 Contributing
-Contributions are welcome! Please fork the repository and create a pull request with your changes. For major changes, please open an issue to discuss what you would like to change.
+Contributions are welcome! 
+Please fork the repository and create a pull request with your changes. 
+For major changes, please open an issue to discuss what you want to change.
 
 ## Contact
 Damaris Jean - damarisjjm@icloud.com
